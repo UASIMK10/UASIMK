@@ -1,0 +1,242 @@
+.marquee {position:relative;
+    overflow:hidden;
+    height:24px;
+    border:solid black 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:14pt;
+    margin-top:3px;
+    color:white;
+    background-color:black;
+    -webkit-box-shadow: 4px 8px  #222,  -4px 0 8px #222;  
+    -moz-box-shadow: 4px 0 8px #222,  -4px 0 8px #222;  
+    box-shadow: 4px 0 8px #222,  -4px 0 8px #222;
+    }
+
+.text {
+	text-align: left;
+	margin: 35px auto;
+	color: rgb(15, 15, 15);
+	font-family: Comic Sans MS;
+	font-size: 10px;
+}
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.menu {
+    float: right;
+}
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    color: #212121;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height : 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background: #ffffff;
+    z-index: 1;
+    border: 1px solid #212121;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 20px;
+    text text-decoration: none;
+    
+}
+nav ul li a:hover {
+    text-decoration: underline;
+} 
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+img{
+    heigh: 50px;
+    margin-top: 50px;
+}
+.kolom {
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.kolom .deskripsi {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    color: #660000;
+
+}
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: hsl(9, 100%, 50%)f;
+    width: 100%;
+    line-height: 50%;
+}
+a.tbl-merah {
+    background: #0a0a0a;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.tbl-merah:hover{
+    background: #3f72af;
+    text-decoration: none;
+} 
+p{
+    margin: 10px 0px 10px 0p;
+    padding: 10px 0px 10px 0px;
+}
+
+form{
+    width: 500px;
+    margin: 100px auto;
+}
+.search{
+    width: 460px;
+    padding: 10px 15px;
+    border: 1px solid black ;
+    border-radius: 100px;
+    background-image: linear-gradient(white, #30dcfb);
+}
+ .search::-webkit-input-placeholder{
+     color: black;
+     padding-left: 45%;
+}
+
+form{
+    width: 500px;
+    margin: 100px auto;
+}
+article {
+    width: 98.8%;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid gainsboro;
+    clear: both;
+}
+
+article p {
+    padding: 5px 6px 5px 5px;
+    line-height: 1.5;  
+}
+article .konten {
+    width: 23.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+
+article .isi {
+    width: 98.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+article .isi .judul {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+article .isi p {
+    margin-top: 0;
+}
+article .isi img {
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+article .konten img {
+    width: 95.8%;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+
+}
+article .konten:hover {
+    opacity:0.9;
+
+}
+article .konten .judul a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size:x-large;
+    color:#020101;
+}
+
+article .konten a:hover {
+    opacity:0.9;
+}
+.beli{
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: red;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.footer p {
+    /*font-family: brush script mt;*/
+    font-family: candara;
+}
+.footer {
+display: flex;
+width: 150%;
+color: white;
+margin-left: -290px;
+}
+.footer .kotak1 {
+background-color: black;
+width: 300%;
+margin-left: 10%;
+}
+
+.footer img{
+width: 50px;
+margin: 0 3px;
+}
+.kotak1
+position: absolut;
+margin-left: 50px;
+
+

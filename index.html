@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDSTORE</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    
+    <script type="text/javascript">
+        function start() {
+           new mq('m1');
+           mqRotate(mqr); // must come last
+        }
+        window.onload = start;
+        
+        function objWidth(obj) {if(obj.offsetWidth) return  obj.offsetWidth; if (obj.clip) return obj.clip.width; return 0;} var mqr = []; function mq(id){this.mqo=document.getElementById(id); var wid = objWidth(this.mqo.getElementsByTagName('span')[0])+ 5; var fulwid = objWidth(this.mqo); var txt = this.mqo.getElementsByTagName('span')[0].innerHTML; this.mqo.innerHTML = ''; var heit = this.mqo.style.height; this.mqo.onmouseout=function() {mqRotate(mqr);}; this.mqo.onmouseover=function() {clearTimeout(mqr[0].TO);}; this.mqo.ary=[]; var maxw = Math.ceil(fulwid/wid)+1; for (var i=0;i<maxw;i++){this.mqo.ary[i]=document.createElement('div'); this.mqo.ary[i].innerHTML = txt; this.mqo.ary[i].style.position = 'absolute'; this.mqo.ary[i].style.left = (wid*i)+'px'; this.mqo.ary[i].style.width = wid+'px'; this.mqo.ary[i].style.height = heit; this.mqo.appendChild(this.mqo.ary[i]);} mqr.push(this.mqo);} function mqRotate(mqr){if (!mqr) return; for (var j=mqr.length - 1; j > -1; j--) {maxa = mqr[j].ary.length; for (var i=0;i<maxa;i++){var x = mqr[j].ary[i].style;  x.left=(parseInt(x.left,10)-1)+'px';} var y = mqr[j].ary[0].style; if (parseInt(y.left,10)+parseInt(y.width,10)<0) {var z = mqr[j].ary.shift(); z.style.left = (parseInt(z.style.left) + parseInt(z.style.width)*maxa) + 'px'; mqr[j].ary.push(z);}} mqr[0].TO=setTimeout('mqRotate(mqr)',25);}
+        </script>
+        <div style="float:left; margin-top:3px; font-size:50pt; text-align:center; font-family:verdana; height:22px; width:300px; color:rgb(13, 224, 94); background:rgb(253, 95, 90); -webkit-box-shadow: 4px 8px  rgb(33, 224, 26),  -4px 0 8px #222;  
+        -moz-box-shadow: 4px 0 8px #222,  -4px 0 8px #222;  
+        box-shadow: 4px 0 8px #222,  -4px 0 8px #222; "></div>
+        <div id="m1" class="marquee">SELAMAT DATANG</div>
+    
+    </script>
+    <marquee>
+        <h1>KUNJUNGI DAN DAPATKAN FREE ONGKIR</h1>
+        
+    </marquee>
+    <body style="background-color: #FB3091;"></body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">MEDSTORE</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href='pembayaran.html'>Pembayaran</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href='login.html'>login</a></li>
+                    
+
+                    
+                </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="home">
+            <img  src= "images/medis.jpg"/>
+            <div class= "kolom">
+                <p class= "deskripsi">MEDSTORE</p>
+                <p class= "deskripsi">Pilihan Tepat untuk Membeli Obat</p>
+                <h2>Tetap Ramah Tanpa, 
+                    Keluar Rumah</h2>
+                <p> Melayani Pemesanan obat dan Pengantaran Obat langsung ke rumah
+                    <p>untuk lebih lanjut tentang apa itu apotek bisa klik dibawah ini</p>
+                <p><a href="https://duniapharmacy.blogspot.com/2011/12/definisi-apotek.html" class="tbl-merah">pelajari lebih lanjut</a></p>
+
+            </div>
+        </section>
+        <section id="product"></section>
+            <form>
+                <input class="search" type="text" placeholder="Search" required>	
+            </form>
+            <marquee>
+                <h1>KLIK BELI SEKARANG APABILA TELAH MEMILIH PRODUK</h1>          
+             </marquee>
+            <article>
+                <div class="konten">
+                 <a href='pembayaran.html'><img src="images/mixagrip.jpg" ></a>
+                 <div class="judul">
+                     <a href="mixagrip.html">mixagrip</a>
+                     <p>Harga Rp 5.000 </p>
+                     <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                 </div>
+               
+                </div>
+                <div class="konten">
+                 <a href='pembayaran.html'><img src="images/panadol.jpg" ></a>
+                 <div class="judul">
+                     <a href="panadol.html">panadol</a>
+                     <p>Harga Rp 12.000 </p>
+                     <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                 </div>
+             
+                </div>
+                <div class="konten">
+                 <a href='pembayaran.html'><img src="images/vitacimin.jpg" ></a>
+                 <div class="judul">
+                     <a href="vitacimin.html">vitacimin</a>
+                     <p>Harga Rp 12.000 </p>
+                     <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                 </div>
+                
+                </div>
+                <div class="konten">
+                 <a href='pembayaran.html'><img src="images/demacolin.jpg" ></a>
+                 <div class="judul">
+                     <a href="demacolin.html">demacolin</a>
+                     <p>Harga Rp 1.500/strip </p>
+                     <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                 </div>
+                 
+                </div>
+                <div class="konten">
+                    <a href='pembayaran.html'><img src="images/betadine.jpeg" ></a>
+                    <div class="judul">
+                        <a href="betadine.html">betadine</a>
+                        <p>Harga Rp 31.500/strip </p>
+                        <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                    </div>
+                    
+                </div>
+                <div class="konten">
+                <a href='pembayaran.html'><img src="images/bodrex.jpg" ></a>
+                    <div class="judul">
+                       <a href="bodrex.html">bodrex</a>
+                       <p>Harga Rp 5.000/strip </p>
+                       <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                    </div>
+                    
+                 
+                </div>
+                <div class="konten">
+                    <a href='pembayaran.html'><img src="images/insto.jpg" ></a>
+                    <div class="judul">
+                        <a href="insto.html">insto</a>
+                        <p>Harga Rp 15.000 </p>
+                        <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                    </div>
+                    
+                </div>
+                <div class="konten">
+                    <a href='pembayaran.html'><img src="images/panoxly.jpeg" ></a>
+                    <div class="judul">
+                        <a href="panoxoly.html">panoxoly</a>
+                        <p>Harga Rp 15.000</p>
+                       <a class="beli" href='pembayaran.html'>beli sekarang</a>
+                    </div>
+                    
+                </div>
+                    
+            </article>
+            <section id="about"></section>
+            <div class="footer">
+                <div class="kotak1">
+                  <h1>About Us</h1>
+                  <p>Toko Online Apotek Siap Menggantar ke Ruman Anda</p>
+                  <p>Contact MEDSTORE</p>
+                  <div class="js"><img src="images/facebook.png"><img src="images/ig.png"><img src="images/twiter.png"><img src="images/yt.png"></div>
+                </div>              
+            </div>
+
+        
+        
+    </div>
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
